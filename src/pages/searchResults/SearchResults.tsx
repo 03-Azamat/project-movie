@@ -26,7 +26,7 @@ export default function SearchResults({ searchValue }: SearchTypes) {
 
   useEffect(() => {
     res();
-  }, []);
+  }, [result]);
 
   console.log(result, "A");
 

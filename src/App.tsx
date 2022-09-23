@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Popular from "./pages/popular/Popular";
 import SearchResults from "./pages/searchResults/SearchResults";
@@ -13,9 +14,9 @@ import MenuList from "./ui/menuList/MenuList";
 function App() {
   const [searchValue, setSearchValue] = useState("");
   return (
-    <Container maxW="container.xl">
-      <Box>
-        <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+    <Box>
+      <Header searchValue={searchValue} setSearchValue={setSearchValue} />
+      <Container maxW="container.xl">
         <Box display="flex" justifyContent="space-between">
           <Box maxW="100px">
             <MenuList />
@@ -37,8 +38,9 @@ function App() {
             </Routes>
           </Box>
         </Box>
-      </Box>
-    </Container>
+      </Container>
+      <Footer />
+    </Box>
   );
 }
 
