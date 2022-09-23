@@ -12,6 +12,7 @@ export default function Footer() {
     <Box bg="brand" py="30px">
       <Container maxW="container.xl">
         <Text>Footer</Text>
+        <Text>AZA</Text>
         <Box>
           {footerList.map((items, index) => (
             <Box key={index}>
